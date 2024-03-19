@@ -3,7 +3,7 @@ let hour;
 let day=0;
 function result(place="hyderabad"){
 api_key="%209340924dae844c06b78132058242702";
-url=`http://api.weatherapi.com/v1/forecast.json?key=9340924dae844c06b78132058242702&q=${place}&days=8&aqi=no&alerts=no`;
+url=`https://api.weatherapi.com/v1/forecast.json?key=9340924dae844c06b78132058242702&q=${place}&days=8&aqi=no&alerts=no`;
 fetch(url) 
 .then(result=>result.json()) 
  .then(info=>{
